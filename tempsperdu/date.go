@@ -3,7 +3,10 @@ package tempsperdu
 import "time"
 
 // DaysInYear returns the number of days in the year that the time lies
-// within
+// within.
+//
+// Deprecated: this package is no longer supported.
+// See github.com/nickwells/tempus.mod/tempus instead.
 func DaysInYear(t time.Time) int {
 	days := 365
 	if IsLeapYear(t) {
@@ -13,7 +16,10 @@ func DaysInYear(t time.Time) int {
 }
 
 // DaysInMonth returns the number of days in the month that the time lies
-// within
+// within.
+//
+// Deprecated: this package is no longer supported.
+// See github.com/nickwells/tempus.mod/tempus instead.
 func DaysInMonth(t time.Time) int {
 	daysInMonth := []int{
 		// Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec
@@ -27,7 +33,10 @@ func DaysInMonth(t time.Time) int {
 	return days
 }
 
-// IsLeapYear returns true if the given year is a leap year
+// IsLeapYear returns true if the given year is a leap year.
+//
+// Deprecated: this package is no longer supported.
+// See github.com/nickwells/tempus.mod/tempus instead.
 func IsLeapYear(t time.Time) bool {
 	y := t.Year()
 	// years divisible by 400 (such as 2000) are leap years
